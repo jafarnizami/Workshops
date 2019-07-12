@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+  <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:fillViewport="true"
+          android:layout_height="match_parent">
+
+      
+      <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          <ImageView
+                  android:id="@+id/imageView"
+                  android:layout_width="match_parent"
+                  android:layout_centerHorizontal="true"
+                  android:src="@drawable/logo2"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/grid_2x"/>
+          
+          <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="300dp"
+                  android:id="@+id/emailTIL"
+                  android:layout_below="@+id/imageView"
+                  android:layout_margin="@dimen/grid_2x"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content">
+              
+              <com.google.android.material.textfield.TextInputEditText
+                      android:id="@+id/emailET"
+                      android:inputType="textEmailAddress"
+                      android:hint="Email"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+          </com.google.android.material.textfield.TextInputLayout>
+          <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="300dp"
+                  android:id="@+id/passwordTIL"
+                  android:layout_below="@+id/emailTIL"
+                  android:layout_margin="@dimen/grid_2x"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content">
+
+              <com.google.android.material.textfield.TextInputEditText
+                      android:id="@+id/passwordET"
+                      android:inputType="textPassword"
+                      android:hint="Password"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <Button
+                  android:layout_width="@dimen/standard_button_width"
+                  android:layout_below="@id/passwordTIL"
+                  android:text="Login"
+                  android:onClick="onLogin"
+                  android:id="@+id/buttonLogin"
+                  style="@style/Standard_button"
+                  android:textAllCaps="false"
+                  android:layout_centerHorizontal="true"
+                  android:layout_margin="@dimen/grid_2x"
+                  android:layout_height="@dimen/standard_button_height"/>
+
+          <TextView
+                  android:layout_width="wrap_content"
+                  android:id="@+id/ourworkshop"
+                  android:layout_centerHorizontal="true"
+                  android:text="Click Here for our Workshops"
+                  android:textColor="@color/blue"
+                  android:onClick="gotoWorkShop"
+                  android:gravity="center"
+                  android:foreground="?attr/selectableItemBackground"
+                  android:textSize="15sp"
+                  android:layout_below="@id/buttonLogin"
+                  android:layout_margin="@dimen/grid_3x"
+                  android:fontFamily="monospace"
+                  android:layout_height="wrap_content"/>
+      </RelativeLayout>
+  </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+            android:id="@+id/loginProgressLayout"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/trans_gray"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "883306486331",
+    "firebase_url": "https://workshops-d5ff9.firebaseio.com",
+    "project_id": "workshops-d5ff9",
+    "storage_bucket": "workshops-d5ff9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883306486331:android:74bde2679589f8b7",
+        "android_client_info": {
+          "package_name": "com.jafar.workshops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883306486331-295lj1o4ecj9lphc1cdufrhvtb5jfsf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxtfQzpgrvZIF_NIfxqNpMZryWOcGMtzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883306486331-295lj1o4ecj9lphc1cdufrhvtb5jfsf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
